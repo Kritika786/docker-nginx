@@ -21,6 +21,6 @@ jobs:
         CR_PAT: ${{ secrets.CR_PAT }}
     - name: Build the Docker image
       run: |
-         docker build ./frontend/ --tag my-image-name
+         docker build ./frontend/ --tag ghcr.io/kritika786/docker-nginx/fronted:my-image-name
          docker run ghcr.io/kritika786/docker-nginx/fronted:my-image-name
          docker push ghcr.io/kritika786/docker-nginx/fronted:my-image-name
