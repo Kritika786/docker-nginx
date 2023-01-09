@@ -22,6 +22,6 @@ jobs:
     - name: Build the Docker image
       run: |
          docker build ./frontend/ --tag my-image-name:$(date +%s)
-         docker run ghcr.io/kritika786/docker-nginx/fronted:my-image-name:$(date +%s)
+         #docker run ghcr.io/kritika786/docker-nginx/fronted:my-image-name:$(date +%s)
          docker push ghcr.io/kritika786/docker-nginx/fronted:my-image-name:$(date +%s)
            
